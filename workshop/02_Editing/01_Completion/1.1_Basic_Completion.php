@@ -70,11 +70,11 @@ class BasicCompletion
 
     }
 
-    public function sayHello()
+    public function run()
     {
     }
 
-    public function run()
+    public function sayHello()
     {
     }
 

@@ -24,6 +24,7 @@ class Person
     }
 
     // 4. Rename the $name parameter to $string. Note that the PHPDoc block is updated as well.
+
     /**
      * @param string $name Name of the person.
      */

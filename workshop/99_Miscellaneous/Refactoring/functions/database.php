@@ -1,5 +1,7 @@
 <?php
-class Database {
+
+class Database
+{
 
 }
 

@@ -18,5 +18,6 @@ Committing a changelist is persisting it as a logical operation in the VCS, with
 5. Start typing in the current file (enter your name here: ""). Note that the editor shows a blue color
    in the left gutter, denoting a change in the line of code since the last VCS commit.
    In the Project tool window, the file color also changes to denote the file has been changed.
-6. Add a line of text below. Note that the editor now displays green in the left gutter, meaning the line has been added.
+6. Add a line of text below. Note that the editor now displays green in the left gutter, meaning the line has been
+   added.
 7. Commit all changes again and give the commit a descriptive name.

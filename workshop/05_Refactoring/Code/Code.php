@@ -1,4 +1,5 @@
 <?php
+
 use Refactoring14\JetBrains\CoolPerson;
 
 require_once '../01_Refactor_This.php';

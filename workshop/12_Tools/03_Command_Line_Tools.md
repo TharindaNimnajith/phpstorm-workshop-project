@@ -6,16 +6,16 @@ Symfony Console-based, Drush or roll your own. Autocompletion support. Not meant
 > * Ctrl+Shift+X (Windows/Linux)
 > * Shift+Command+X (macOS)
 
-
 1. We can use Command Line Tools for working with Composer (and other tools).
-   Command Line Tools can be added globally (for all projects) or per project. We'll add Composer for the current project.
+   Command Line Tools can be added globally (for all projects) or per project. We'll add Composer for the current
+   project.
    From the _Settings | Tools | Command Line Tool Support_, add a new tool.
    Add Composer as a tool. Note that Zend Framework, Symfony, Symfony Console-based, Drush are also supported.
    In the next step, specify the path to `composer.phar`.
 2. After you click _OK_, the tool is added with a `c` alias, which means that we can now invoke Composer as `c`.
    Open the _Command Line Tools_ using the keyboard shortcut. Type `c`.
    Note the autocompletion support. Select the `require` command and specify `psr/log:1.0.*@dev` as the package:
-    `c require "psr/log:1.0.*@dev"`
+   `c require "psr/log:1.0.*@dev"`
 
    This will install the `psr/log` package at the project root.
 3. Let's add a _Custom Tool_. From the _Settings | Tools | Command Line Tool Support_, add a new tool.
@@ -38,4 +38,5 @@ Symfony Console-based, Drush or roll your own. Autocompletion support. Not meant
     </framework>
     ```
 
-6. Invoke the newly create _hw_ tool from the _Command Line Tools_ console. Note autocompletion information is available now.
+6. Invoke the newly create _hw_ tool from the _Command Line Tools_ console. Note autocompletion information is available
+   now.

@@ -10,7 +10,6 @@
 
 namespace Navigation2\JetBrains;
 
-use ArrayIterator;
 use Navigation1\JetBrains\Customers\Customer;
 
 $name = 'Hadi';
@@ -27,4 +26,4 @@ $person->celebrateBirthday();
 
 // 6. Go to Declaration for the ArrayIterator SPL class.
 $myArray = array();
-$myArrayIterator  = new \ArrayIterator($myArray);
+$myArrayIterator = new \ArrayIterator($myArray);

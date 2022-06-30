@@ -1,8 +1,10 @@
 <?php
+
 namespace Navigation1\JetBrains\Customers;
 
 
-class Customer {
+class Customer
+{
     /** @var string */
     protected $_name;
 
@@ -20,14 +22,6 @@ class Customer {
     }
 
     /**
-     * @param int $age
-     */
-    public function setAge($age)
-    {
-        $this->_age = $age;
-    }
-
-    /**
      * @return int
      */
     public function getAge()
@@ -36,11 +30,11 @@ class Customer {
     }
 
     /**
-     * @param string $name
+     * @param int $age
      */
-    public function setName($name)
+    public function setAge($age)
     {
-        $this->_name = $name;
+        $this->_age = $age;
     }
 
     /**
@@ -52,9 +46,18 @@ class Customer {
     }
 
     /**
+     * @param string $name
+     */
+    public function setName($name)
+    {
+        $this->_name = $name;
+    }
+
+    /**
      * Celebrate birthday.
      */
-    public function celebrateBirthday() {
+    public function celebrateBirthday()
+    {
         echo 'Yay!';
     }
 }

@@ -1,4 +1,5 @@
 <?php
+
 namespace Debugging\JetBrains;
 
 /**
@@ -6,7 +7,8 @@ namespace Debugging\JetBrains;
  *
  * @package Debugging\JetBrains
  */
-class Person {
+class Person
+{
     protected $_name;
     protected $_age;
 
@@ -17,23 +19,23 @@ class Person {
         $this->_age = $age;
     }
 
-    public function setName($name)
-    {
-        $this->_name = $name;
-    }
-
     public function getName()
     {
         return $this->_name;
     }
 
-    public function setAge($age)
+    public function setName($name)
     {
-        $this->_age = $age;
+        $this->_name = $name;
     }
 
     public function getAge()
     {
         return $this->_age;
+    }
+
+    public function setAge($age)
+    {
+        $this->_age = $age;
     }
 }

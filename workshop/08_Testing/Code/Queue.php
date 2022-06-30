@@ -1,19 +1,24 @@
 <?php
+
 namespace Testing\JetBrains;
 
-class Queue {
+class Queue
+{
     /** @var array */
     protected $_store = array();
 
-    public function getNumberOfItems() {
+    public function getNumberOfItems()
+    {
         return count($this->_store);
     }
 
-    public function enqueue($item) {
+    public function enqueue($item)
+    {
         array_push($this->_store, $item);
     }
 
-    public function peek() {
+    public function peek()
+    {
         return array_shift($this->_store);
     }
 }

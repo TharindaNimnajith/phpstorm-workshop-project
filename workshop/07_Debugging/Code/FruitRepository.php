@@ -1,15 +1,19 @@
 <?php
+
 namespace Debugging\JetBrains;
 
 
-class FruitRepository {
+class FruitRepository
+{
     protected $_fruits = array();
 
-    public function __construct() {
+    public function __construct()
+    {
         $this->_fruits = array('apple', 'pear', 'lemon');
     }
 
-    public function getAll() {
+    public function getAll()
+    {
         return $this->_fruits;
     }
 } 

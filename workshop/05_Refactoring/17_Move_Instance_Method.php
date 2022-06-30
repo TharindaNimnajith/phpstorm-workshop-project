@@ -9,13 +9,13 @@ namespace Refactoring17\Jetbrains;
  *
  * Move an instance method to a parameter class or to a field class.
  */
-
-
-class Message {
+class Message
+{
     public $messageText;
 }
 
-class Sender {
+class Sender
+{
 
     public $senderType;
 
@@ -27,11 +27,12 @@ class Sender {
     }
 }
 
-class AnotherMessage {
+class AnotherMessage
+{
 
     // Move the createMessage method to the Message parameter class. Notice that PhpStorm handles the `self` reference
     // to the AnotherMessage class.
-    public function createMessage(Message $message):self
+    public function createMessage(Message $message): self
     {
         return new self();
     }

@@ -18,6 +18,8 @@ Create a new table in the database. Specify column options, default values, prim
     ```
 
 2. In the _Database_ tool window, find the `attendee.person_id` column and create a foreign key to `person.person_id`.
-   Enter `person` as the table name. The IDE will determine that `person__id` is the column that must be used for the foreign key.
+   Enter `person` as the table name. The IDE will determine that `person__id` is the column that must be used for the
+   foreign key.
 3. Update the `workshop_database.sql` file with the current tables that are available in the database.
-   This can be done by selecting the workshop database and using the _Generate and Copy DDL_ action (Ctrl+Shift+C / Command+Shift+C).
+   This can be done by selecting the workshop database and using the _Generate and Copy DDL_ action (Ctrl+Shift+C /
+   Command+Shift+C).

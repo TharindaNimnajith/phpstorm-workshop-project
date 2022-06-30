@@ -1,7 +1,7 @@
-var Customer = function() {
+var Customer = function () {
     this.name = '';
     this.age = 0;
-    this.celebrateBirthday = function() {
+    this.celebrateBirthday = function () {
         console.log('Yay!');
     }
 };

@@ -24,11 +24,11 @@
 // 5. Run the configuration. Note that Karma will open a browser and run the unit tests defined below.
 //    Test results are visible in the IDE.
 
-describe("Sample test suite", function() {
-    it("a boolean true should be true", function() {
+describe("Sample test suite", function () {
+    it("a boolean true should be true", function () {
         expect(true).toBe(true);
     });
-    it("a boolean false should be false", function() {
+    it("a boolean false should be false", function () {
         expect(false).toBe(false);
     });
 });

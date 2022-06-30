@@ -18,7 +18,7 @@ class ColumnSelection
     // 2. Draw a rectangle over the $someVariable column.
     // 3. Rename the variable to $foo.
     // 2. Disable Column Selection Mode.
-    
+
     public function columnSelection()
     {
         $someVariable = 3;

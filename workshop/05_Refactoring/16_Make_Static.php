@@ -10,17 +10,17 @@ namespace Refactoring16\JetBrains;
 // 1. Make method split static.
 class Splitter
 {
-	private $delimiter;
+    private $delimiter;
 
-	public function __construct($delimiter)
-	{
-		$this->delimiter = $delimiter;
-	}
+    public function __construct($delimiter)
+    {
+        $this->delimiter = $delimiter;
+    }
 
-	public function split($subject)
-	{
-		return explode($this->delimiter, $subject);
-	}
+    public function split($subject)
+    {
+        return explode($this->delimiter, $subject);
+    }
 }
 
 // 2. Note that calls to Splitter::split() have updated to static calls

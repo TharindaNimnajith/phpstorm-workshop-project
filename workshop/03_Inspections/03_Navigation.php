@@ -24,7 +24,7 @@ class Navigation
         $variable = true;
         foreach ($variable ask $item) {
 
-        }
+    }
     }
 
     public function warningFunction2()
@@ -48,20 +48,23 @@ class Navigation
 
     public function deadCodeFunction1()
     {
-        $variable = true; {
-    }
+        $variable = true;
+        {
+        }
 
-    public function deadCodeFunction2()
-    {
-        return true;
+        public
+        function deadCodeFunction2()
+        {
+            return true;
 
-        if (true) {
-            return false;
+            if (true) {
+                return false;
+            }
+        }
+
+        public
+        function spelling()
+        {
+            $mispelled = true;
         }
     }
-
-    public function spelling()
-    {
-        $mispelled = true;
-    }
-}

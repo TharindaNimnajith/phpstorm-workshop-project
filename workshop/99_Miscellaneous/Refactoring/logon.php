@@ -29,29 +29,29 @@ if (isset($_POST['submit'])) {
     }
 }
 ?>
-    <div id="main">
-        <h2>Log on</h2>
+<div id="main">
+    <h2>Log on</h2>
 
-        <form action="logon.php" method="post">
-            <fieldset>
-                <legend>Log on</legend>
-                <ol>
-                    <li>
-                        <label for="username">Username:</label>
-                        <input type="text" name="username" value="" id="username"/>
-                    </li>
-                    <li>
-                        <label for="password">Password:</label>
-                        <input type="password" name="password" value="" id="password"/>
-                    </li>
-                </ol>
-                <input type="submit" name="submit" value="Submit"/>
+    <form action="logon.php" method="post">
+        <fieldset>
+            <legend>Log on</legend>
+            <ol>
+                <li>
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" value="" id="username"/>
+                </li>
+                <li>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" value="" id="password"/>
+                </li>
+            </ol>
+            <input type="submit" name="submit" value="Submit"/>
 
-                <p>
-                    <a href="index.php">Cancel</a>
-                </p>
-            </fieldset>
-        </form>
-    </div>
-    </div> <!-- End of outer-wrapper which opens in header.php -->
+            <p>
+                <a href="index.php">Cancel</a>
+            </p>
+        </fieldset>
+    </form>
+</div>
+</div> <!-- End of outer-wrapper which opens in header.php -->
 <?php include SITE_PATH . '/includes/footer.php'; ?>

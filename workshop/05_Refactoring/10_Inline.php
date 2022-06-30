@@ -15,7 +15,6 @@ $name = 'Benji';
 echo $name;
 
 
-
 function printName($name)
 {
     echo $name;

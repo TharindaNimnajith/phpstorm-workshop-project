@@ -10,6 +10,7 @@
  */
 
 namespace Debugging4\JetBrains;
+
 use Exception;
 
 // 1. Use the keyboard shortcut to view all breakpoints.

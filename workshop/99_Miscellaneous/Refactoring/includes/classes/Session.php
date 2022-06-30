@@ -3,7 +3,8 @@
 /**
  * Class Session.
  */
-class Session {
+class Session
+{
     /**
      * @var array Store of session data.
      */
@@ -25,7 +26,8 @@ class Session {
      * @param string $key Key of the session item.
      * @return bool True if item exists, false if otherwise.
      */
-    public function has($key) {
+    public function has($key)
+    {
         return isset($this->_store[$key]);
     }
 
@@ -35,7 +37,8 @@ class Session {
      * @param string $key Key of the session item.
      * @return mixed|null Session item or null if it does not exist.
      */
-    public function get($key) {
+    public function get($key)
+    {
         if (isset($this->_store[$key])) {
             return $this->_store[$key];
         }
@@ -49,7 +52,8 @@ class Session {
      * @param mixed $value Value of the session item.
      * @return Session Fluent interface.
      */
-    public function set($key, $value) {
+    public function set($key, $value)
+    {
         $this->_store[$key] = $value;
         return $this;
     }

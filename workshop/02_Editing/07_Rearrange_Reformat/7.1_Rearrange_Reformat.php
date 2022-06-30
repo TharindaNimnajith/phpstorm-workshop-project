@@ -18,9 +18,6 @@
 
 namespace Editing7\JetBrains;
 
-use Editing2\JetBrains;
-use Editing6\JetBrains\Person;
-
 // 1. The class below is a mess.
 //    - Public/protected/static members are all mixed
 //    - Brackets are inconsistent
@@ -41,10 +38,20 @@ use Editing6\JetBrains\Person;
 
 class Rearrange
 {
-    protected $_firstProperty;
-    public $_secondProperty;
     public static $_thirdProperty;
+    public $_secondProperty;
+    protected $_firstProperty;
     protected $_fourthProperty;
+
+    public static function getThirdProperty()
+    {
+        return self::$_thirdProperty;
+    }
+
+    public static function setThirdProperty($thirdProperty)
+    {
+        self::$_thirdProperty = $thirdProperty;
+    }
 
     public function firstFunction()
     {
@@ -53,19 +60,14 @@ class Rearrange
         }
     }
 
-    public function setFirstProperty($firstProperty)
-    {
-        $this->_firstProperty = $firstProperty;
-    }
-
     public function getFirstProperty()
     {
         return $this->_firstProperty;
     }
 
-    public function setSecondProperty($secondProperty)
+    public function setFirstProperty($firstProperty)
     {
-        $this->_secondProperty = $secondProperty;
+        $this->_firstProperty = $firstProperty;
     }
 
     public function getSecondProperty()
@@ -73,23 +75,18 @@ class Rearrange
         return $this->_secondProperty;
     }
 
-    public static function setThirdProperty($thirdProperty)
+    public function setSecondProperty($secondProperty)
     {
-        self::$_thirdProperty = $thirdProperty;
-    }
-
-    public static function getThirdProperty()
-    {
-        return self::$_thirdProperty;
-    }
-
-    public function setFourthProperty($fourthProperty)
-    {
-        $this->_fourthProperty = $fourthProperty;
+        $this->_secondProperty = $secondProperty;
     }
 
     public function getFourthProperty()
     {
         return $this->_fourthProperty;
+    }
+
+    public function setFourthProperty($fourthProperty)
+    {
+        $this->_fourthProperty = $fourthProperty;
     }
 }

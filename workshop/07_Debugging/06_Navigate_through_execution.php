@@ -30,7 +30,7 @@ for ($i = 0; $i < 200; $i++) {
 foreach ($people as $person) {
     foreach ($fruits as $fruit) {
         // 2. Place a breakpoint on the following line of code.
-        echo $person->getName() . ", age " .  $person->getAge() . ", likes " . $fruit . "\r\n";
+        echo $person->getName() . ", age " . $person->getAge() . ", likes " . $fruit . "\r\n";
     }
 }
 

@@ -19,15 +19,15 @@ echo "----------------------\r\n";
 //    Notice that the IDE is pretty good at guessing what the constant will be named.
 class CustomerRepository
 {
+    public function getAllActive(Db $db)
+    {
+        return $db->getAll('SELECT * FROM customer WHERE active = 1', 15);
+    }
+
     public function getAll()
     {
         $db = new Db();
         return $db->getAll('SELECT * FROM customer', 15);
-    }
-
-    public function getAllActive(Db $db)
-    {
-        return $db->getAll('SELECT * FROM customer WHERE active = 1', 15);
     }
 }
 

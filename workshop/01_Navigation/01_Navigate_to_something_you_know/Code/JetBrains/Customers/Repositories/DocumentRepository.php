@@ -1,7 +1,9 @@
 <?php
+
 namespace Navigation1\JetBrains\Customers\Repositories;
 
 
-class DocumentRepository extends RepositoryBase {
+class DocumentRepository extends RepositoryBase
+{
 
 }

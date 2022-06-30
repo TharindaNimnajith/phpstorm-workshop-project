@@ -23,7 +23,8 @@ namespace LiveTemplates2\JetBrains;
 
 $MyArray = array('first' => 1, 'second' => 2);
 
-var $key = '';
+var
+$key = '';
 
 //$key . 'first'.ake <TAB>
 
